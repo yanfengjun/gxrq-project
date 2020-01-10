@@ -1,0 +1,71 @@
+@charset "utf-8";
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,textarea,p,blockquote,th,td,input,select,textarea,button,img{padding: 0; margin: 0;}
+html {
+    height: 100%;
+    min-height: 100%;
+}
+body {
+    height: 100%;
+    font-family: 'Microsoft Yahei', 'PingFang SC', 'Avenir', 'Segoe UI', 'Hiragino Sans GB', STHeiti, 'Microsoft Sans Serif', 'WenQuanYi Micro Hei', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #333;
+    -webkit-font-smoothing: antialiased;
+    -webkit-tap-highlight-color: transparent;
+}
+/* 清除列表样式 */
+dl,ul,ol,menu,li{list-style:none} 
+
+::-webkit-scrollbar {
+    z-index: 11;
+    width: 6px
+}
+
+::-webkit-scrollbar:horizontal {
+    height: 6px
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    width: 6px;
+    background: #b4bccc
+}
+
+::-webkit-scrollbar-corner,::-webkit-scrollbar-track {
+    background: #fff
+}
+
+::-webkit-scrollbar-track-piece {
+    background: #fff;
+    width: 6px
+}
+
+*{
+    box-sizing:border-box;
+    -moz-box-sizing:border-box; 
+    -webkit-box-sizing:border-box;
+}
+.el-menu-item {
+    text-align: left;
+    background-color: #ffffff;
+}
+
+.el-menu-item:hover, .el-menu-item:focus {
+    outline: none;
+    background-color: #e5f9f3;
+}
+ 
+.el-menu-item.is-active {
+    background-color: #e5f9f3;
+}
+
+.el-menu-item.is-active::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 6px;
+    left: 0;
+    top: 0;
+    background-color: #00c88d;
+}
